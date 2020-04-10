@@ -1,23 +1,77 @@
-html, body {
-	height: 100%;
-}
-
-html {
-	background-image: url('../img/sample.jpg');
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: cover;	
-}
-
+html,
 body {
-	background-color: rgba(44,62,80 , 0.6 );
-	background-image: url('../img/pattern.png');
-	background-position: center;
-	background-repeat: repeat;
-	font-family: 'Raleway', 'Arial', sans-serif;
+	margin: 0;
+	padding: 0;
 }
+
+
+.logo {}
+
+.shape_1 {
+	position: absolute;
+	top: 20%;
+	right: 30%;
+	-webkit-animation: moveLeftBounce 3s linear infinite;
+	animation: moveLeftBounce 3s linear infinite;
+}
+
+.shape_2 {
+	position: absolute;
+	top: 0%;
+	left: 2%;
+	-webkit-animation: moveLeftBounce 3s linear infinite;
+	animation: moveLeftBounce 3s linear infinite;
+}
+
+
+.image {
+	position: absolute;
+
+	top: 2%;
+	left: 5%;
+
+}
+
+@keyframes moveLeftBounce {
+	0% {
+		transform: translateX(0px);
+	}
+
+	50% {
+		transform: translateX(20px);
+	}
+
+	100% {
+		transform: translateX(0px);
+	}
+}
+
+@keyframes moveBounce {
+	0% {
+		transform: translateY(0px);
+	}
+
+	50% {
+		transform: translateY(20px);
+	}
+
+	100% {
+		transform: translateY(0px);
+	}
+}
+
+.bg {
+	background-image: linear-gradient(#19a94b, #000);
+	height: 657px;
+	overflow-y: hidden;
+	border-top-left-radius: 260px;
+	border-top-right-radius: 260px;
+}
+
 
 .countdown-container {
+	margin-top: 40px;
+	align-content: center;
 	position: relative;
 	top: 50%;
 	-webkit-transform: translateY(-50%);
@@ -29,26 +83,25 @@ body {
 .clock-item .inner {
 	height: 0px;
 	padding-bottom: 100%;
-	position: relative;	
+	position: relative;
 	width: 100%;
 }
 
 .clock-canvas {
-	background-color: rgba(255, 255, 255, .1);
 	border-radius: 50%;
 	height: 0px;
 	padding-bottom: 100%;
 }
 
 .text {
-	color: #fff;	
+	color: #fff;
 	font-size: 30px;
-	font-weight: bold;	
+	font-weight: bold;
 	margin-top: -50px;
 	position: absolute;
 	top: 50%;
 	text-align: center;
-	text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+	text-shadow: 1px 1px 1px #000;
 	width: 100%;
 }
 
@@ -62,7 +115,7 @@ body {
 
 @media (min-width: 768px) and (max-width: 991px) {
 	.clock-item {
-		margin-bottom: 30px;		
+		margin-bottom: 30px;
 	}
 }
 
