@@ -1,18 +1,8 @@
-jQuery Final Countdown
-======================
 
-- http://final-countdown.pragmaticmates.com/demo/index.html
-- http://final-countdown.pragmaticmates.com/demo/data-attributes.html
-
-Requirements
-------------
-- jQuery http://jquery.com
-- Kinetic http://kineticjs.com
 
 Javascript Code
 ---------------
 ::
-
 	$(document).ready(function() {
 		$('.countdown').final_countdown({
 			'start': 1362139200,
