@@ -5,7 +5,11 @@ body {
 }
 
 
-.logo {}
+.logo {
+	height: auto;
+	width: auto;
+	z-index: 10;
+}
 
 .shape_1 {
 	position: absolute;
@@ -17,18 +21,32 @@ body {
 
 .shape_2 {
 	position: absolute;
-	top: 0%;
+	top: 20%;
 	left: 2%;
-	-webkit-animation: moveLeftBounce 3s linear infinite;
+	z-index: -2 -webkit-animation: moveLeftBounce 3s linear infinite;
 	animation: moveLeftBounce 3s linear infinite;
 }
+
+.shape_3 {
+	position: absolute;
+	top: 45%;
+	left: 95%;
+}
+
 
 
 .image {
 	position: absolute;
+	top: 9%;
 
-	top: 2%;
-	left: 5%;
+
+}
+
+.shape_4 {
+	position: absolute;
+	top: -40%;
+	left: 80%;
+	transform: rotateX(deg);
 
 }
 
@@ -61,11 +79,12 @@ body {
 }
 
 .bg {
+
 	background-image: linear-gradient(#19a94b, #000);
 	height: 657px;
 	overflow-y: hidden;
-	border-top-left-radius: 260px;
-	border-top-right-radius: 260px;
+	border-top-left-radius: ;
+	border-top-right-radius: 400px;
 }
 
 
